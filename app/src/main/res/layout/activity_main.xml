@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/heartsLayout"
+        android:layout_width="500dp"
+        android:layout_height="40dp"
+       >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/score"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:text="Score:  "
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/heart1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/heart" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/heart2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            app:srcCompat="@drawable/heart" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/heart3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            app:srcCompat="@drawable/heart"
+            tools:ignore="ImageContrastCheck" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/matrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_above="@id/leftArrowButton"
+
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/road1"
+            android:layout_width="150dp"
+            android:layout_height="560dp"
+            android:layout_weight="1"
+            android:background="@drawable/road"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/row1_col1"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row2_col1"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row3_col1"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row4_col1"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row5_col1"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row6_col1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/road2"
+            android:layout_width="150dp"
+            android:layout_height="560dp"
+            android:layout_weight="1"
+            android:background="@drawable/road"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/row1_col2"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row2_col2"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row3_col2"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row4_col2"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row5_col2"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row6_col2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/spaceship"
+                tools:ignore="ContentDescription" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/road3"
+            android:layout_width="150dp"
+            android:layout_height="560dp"
+            android:layout_weight="1"
+            android:background="@drawable/road"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/row1_col3"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row2_col3"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row3_col3"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row4_col3"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row5_col3"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/row6_col3"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <!-- Left arrow button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/leftArrowButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:contentDescription="@android:string/VideoView_error_button"
+        app:icon="@drawable/arrow_left"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- Right arrow button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rightArrowButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:contentDescription="@android:string/VideoView_error_button"
+        app:icon="@drawable/arrow_right" />
+
+
+</RelativeLayout>
